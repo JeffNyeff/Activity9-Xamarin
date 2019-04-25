@@ -8,10 +8,10 @@
         <StackLayout>
             <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
                 <Image x:Name="imgBanner" Source="banner.png" ></Image>
-                <Image Margin="0,0,0,10" HeightRequest="100" Source="SQLite.png" ></Image>
-                <Label Margin="0,0,0,10" Text="SQLite" FontAttributes="Bold" FontSize="Large" TextColor="Gray" HorizontalTextAlignment="Center" ></Label>
-                <Entry x:Name="txtPersonId" Placeholder="PersonId Update and Delete"></Entry>
-                <Entry x:Name="txtName" Placeholder="Enter Person Name"></Entry>
+                
+                <Label Margin="0,0,0,10" Text="Shopping List" FontAttributes="Bold" FontSize="Large" TextColor="Gray" HorizontalTextAlignment="Center" ></Label>
+                <Entry x:Name="txtItemId" Placeholder="Add delete and update shopping List"></Entry>
+                <Entry x:Name="txtItem" Placeholder="Enter Item"></Entry>
                 <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
                     <Button x:Name="btnAdd" WidthRequest="200" Text="Add" Clicked="BtnAdd_Clicked" />
                     <Button x:Name="btnRead" WidthRequest="200" Text="Read" Clicked="BtnRead_Clicked" />
@@ -20,10 +20,10 @@
                     <Button x:Name="btnUpdate" WidthRequest="200" Text="Update" Clicked="BtnUpdate_Clicked"/>
                     <Button x:Name="btnDelete" WidthRequest="200" Text="Delete" Clicked="BtnDelete_Clicked" />
                 </StackLayout>
-                <ListView x:Name="lstPersons">
+                <ListView x:Name="lstItems">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextCell Text="{Binding Name}" Detail="{Binding PersonID}"></TextCell>
+                            <TextCell Text="{Binding Item}" Detail="{Binding ItemID}"></TextCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>

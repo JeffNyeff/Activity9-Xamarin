@@ -10,3 +10,27 @@ C:\Users\susai\Desktop\VisualStudio Source\XamarinSQLite\XamarinSQLite\XamarinSQ
 C:\Users\susai\Desktop\VisualStudio Source\XamarinSQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\susai\Desktop\VisualStudio Source\XamarinSQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.dll
 C:\Users\susai\Desktop\VisualStudio Source\XamarinSQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.pdb
+C:\Users\user\Desktop\Projects354\Activity9_Xamarin\XamarinForms-SQLite\XamarinSQLite\XamarinSQLite\bin\Debug\netstandard2.0\XamarinSQLite.deps.json
+C:\Users\user\Desktop\Projects354\Activity9_Xamarin\XamarinForms-SQLite\XamarinSQLite\XamarinSQLite\bin\Debug\netstandard2.0\XamarinSQLite.dll
+C:\Users\user\Desktop\Projects354\Activity9_Xamarin\XamarinForms-SQLite\XamarinSQLite\XamarinSQLite\bin\Debug\netstandard2.0\XamarinSQLite.pdb
+C:\Users\user\Desktop\Projects354\Activity9_Xamarin\XamarinForms-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Projects354\Activity9_Xamarin\XamarinForms-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\user\Desktop\Projects354\Activity9_Xamarin\XamarinForms-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\user\Desktop\Projects354\Activity9_Xamarin\XamarinForms-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Projects354\Activity9_Xamarin\XamarinForms-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Projects354\Activity9_Xamarin\XamarinForms-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.AssemblyInfo.cs
+C:\Users\user\Desktop\Projects354\Activity9_Xamarin\XamarinForms-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\user\Desktop\Projects354\Activity9_Xamarin\XamarinForms-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.dll
+C:\Users\user\Desktop\Projects354\Activity9_Xamarin\XamarinForms-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.pdb
+C:\Users\user\Desktop\Ac_Xamarin\Xamarin-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Ac_Xamarin\Xamarin-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\user\Desktop\Ac_Xamarin\Xamarin-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\user\Desktop\Ac_Xamarin\Xamarin-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Ac_Xamarin\Xamarin-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Ac_Xamarin\Xamarin-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.AssemblyInfo.cs
+C:\Users\user\Desktop\Ac_Xamarin\Xamarin-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.dll
+C:\Users\user\Desktop\Ac_Xamarin\Xamarin-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamarinSQLite.pdb
+C:\Users\user\Desktop\Ac_Xamarin\Xamarin-SQLite\XamarinSQLite\XamarinSQLite\bin\Debug\netstandard2.0\XamarinSQLite.deps.json
+C:\Users\user\Desktop\Ac_Xamarin\Xamarin-SQLite\XamarinSQLite\XamarinSQLite\bin\Debug\netstandard2.0\XamarinSQLite.dll
+C:\Users\user\Desktop\Ac_Xamarin\Xamarin-SQLite\XamarinSQLite\XamarinSQLite\bin\Debug\netstandard2.0\XamarinSQLite.pdb
+C:\Users\user\Desktop\Ac_Xamarin\Xamarin-SQLite\XamarinSQLite\XamarinSQLite\obj\Debug\netstandard2.0\XamlC.stamp

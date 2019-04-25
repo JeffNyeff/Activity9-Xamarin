@@ -19,110 +19,110 @@ namespace XamarinSQLite
             base.OnAppearing();
             
             //Get All Persons
-            var personList = await App.SQLiteDb.GetItemsAsync();
-            if(personList!=null)
+            var listItems = await App.SQLiteDb.GetItemsAsync();
+            if(listItems!=null)
             {
-                lstPersons.ItemsSource = personList;
+                lstItems.ItemsSource = listItems;
             }
         }
         private async void BtnAdd_Clicked(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtName.Text))
+            if (!string.IsNullOrEmpty(txtItem.Text))
             {
-                Person person = new Person()
+                ItemList itemList = new ItemList()
                 {
-                    Name = txtName.Text
+                    Item = txtItem.Text
                 };
 
-                //Add New Person
-                await App.SQLiteDb.SaveItemAsync(person);
-                txtName.Text = string.Empty;
-                await DisplayAlert("Success", "Person added Successfully", "OK");
-                //Get All Persons
-                var personList = await App.SQLiteDb.GetItemsAsync();
-                if (personList != null)
+                //Add New Item
+                await App.SQLiteDb.SaveItemAsync(itemList);
+                txtItem.Text = string.Empty;
+                await DisplayAlert("Success", "Item added Successfully", "OK");
+                //Get All items
+                var listofitems = await App.SQLiteDb.GetItemsAsync();
+                if (listofitems != null)
                 {
-                    lstPersons.ItemsSource = personList;
+                    lstItems.ItemsSource = listofitems;
                 }
             }
             else
             {
-                await DisplayAlert("Required", "Please Enter name!", "OK");
+                await DisplayAlert("Required", "Please Enter Item!", "OK");
             }
         }
 
         private async void BtnRead_Clicked(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtPersonId.Text))
+            if (!string.IsNullOrEmpty(txtItemId.Text))
             {
                 //Get Person
-                var person = await App.SQLiteDb.GetItemAsync(Convert.ToInt32(txtPersonId.Text));
-                if(person!=null)
+                var item = await App.SQLiteDb.GetItemAsync(Convert.ToInt32(txtItemId.Text));
+                if(item!=null)
                 {
-                    txtName.Text = person.Name;
-                    await DisplayAlert("Success","Person Name: "+ person.Name, "OK");
+                    txtItem.Text = item.Item;
+                    await DisplayAlert("Success","Added Item: "+ item.Item, "OK");
                 }
             }
             else
             {
-                await DisplayAlert("Required", "Please Enter PersonID", "OK");
+                await DisplayAlert("Required", "Please Enter Item", "OK");
             }
         }
 
         private async void BtnUpdate_Clicked(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtPersonId.Text))
+            if (!string.IsNullOrEmpty(txtItemId.Text))
             {
-                Person person = new Person()
+                ItemList itemList = new ItemList()
                 {
-                    PersonID=Convert.ToInt32(txtPersonId.Text),
-                    Name = txtName.Text
+                    ItemID=Convert.ToInt32(txtItemId.Text),
+                    Item = txtItem.Text
                 };
 
-                //Update Person
-                await App.SQLiteDb.SaveItemAsync(person);
+                //Update item
+                await App.SQLiteDb.SaveItemAsync(itemList);
 
-                txtPersonId.Text = string.Empty;
-                txtName.Text = string.Empty;
-                await DisplayAlert("Success", "Person Updated Successfully", "OK");
-                //Get All Persons
-                var personList = await App.SQLiteDb.GetItemsAsync();
-                if (personList != null)
+                txtItemId.Text = string.Empty;
+                txtItem.Text = string.Empty;
+                await DisplayAlert("Success", "Item Updated Successfully", "OK");
+                //Get All items
+                var List = await App.SQLiteDb.GetItemsAsync();
+                if (List != null)
                 {
-                    lstPersons.ItemsSource = personList;
+                    lstItems.ItemsSource = List;
                 }
 
             }
             else
             {
-                await DisplayAlert("Required", "Please Enter PersonID", "OK");
+                await DisplayAlert("Required", "Please Enter ItemID", "OK");
             }
         }
 
         private async void BtnDelete_Clicked(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtPersonId.Text))
+            if (!string.IsNullOrEmpty(txtItemId.Text))
             {
-                //Get Person
-                var person = await App.SQLiteDb.GetItemAsync(Convert.ToInt32(txtPersonId.Text));
-                if (person != null)
+                //Get Item
+                var item = await App.SQLiteDb.GetItemAsync(Convert.ToInt32(txtItemId.Text));
+                if (item != null)
                 {
-                    //Delete Person
-                    await App.SQLiteDb.DeleteItemAsync(person);
-                    txtPersonId.Text = string.Empty;
-                    await DisplayAlert("Success", "Person Deleted", "OK");
+                    //Delete item
+                    await App.SQLiteDb.DeleteItemAsync(item);
+                    txtItemId.Text = string.Empty;
+                    await DisplayAlert("Success", "Item Deleted", "OK");
                     
-                    //Get All Persons
-                    var personList = await App.SQLiteDb.GetItemsAsync();
-                    if (personList != null)
+                    //Get All items
+                    var itemList = await App.SQLiteDb.GetItemsAsync();
+                    if (itemList != null)
                     {
-                        lstPersons.ItemsSource = personList;
+                        lstItems.ItemsSource = itemList;
                     }
                 }
             }
             else
             {
-                await DisplayAlert("Required", "Please Enter PersonID", "OK");
+                await DisplayAlert("Required", "Please Enter ItemID", "OK");
             }
         }
     }

@@ -11,39 +11,39 @@ namespace XamarinSQLite
         public SQLiteHelper(string dbPath)
         {
             db = new SQLiteAsyncConnection(dbPath);
-            db.CreateTableAsync<Person>().Wait();
+            db.CreateTableAsync<ItemList>().Wait();
         }
 
         //Insert and Update new record
-        public Task<int> SaveItemAsync(Person person)
+        public Task<int> SaveItemAsync(ItemList itemList)
         {
-            if (person.PersonID != 0)
+            if (itemList.ItemID != 0)
             {
-                return db.UpdateAsync(person);
+                return db.UpdateAsync(itemList);
             }
             else
             {
-                return db.InsertAsync(person);
+                return db.InsertAsync(itemList);
             }
         }
 
         //Delete
-        public Task<int> DeleteItemAsync(Person person)
+        public Task<int> DeleteItemAsync(ItemList itemList)
         {
-            return db.DeleteAsync(person);
+            return db.DeleteAsync(itemList);
         }
 
         //Read All Items
-        public Task<List<Person>> GetItemsAsync()
+        public Task<List<ItemList>> GetItemsAsync()
         {
-            return db.Table<Person>().ToListAsync();
+            return db.Table<ItemList>().ToListAsync();
         }
 
        
         //Read Item
-        public Task<Person> GetItemAsync(int personId)
+        public Task<ItemList> GetItemAsync(int itemId)
         {
-            return db.Table<Person>().Where(i => i.PersonID == personId).FirstOrDefaultAsync();
+            return db.Table<ItemList>().Where(i => i.ItemID == itemId).FirstOrDefaultAsync();
         }
     }
 }
